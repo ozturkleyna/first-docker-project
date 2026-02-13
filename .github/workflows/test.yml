@@ -6,5 +6,9 @@ jobs:
     steps:
       - name: Kodlari_Kopyala
         uses: actions/checkout@v4
+
+      - name: Docker_Versiyon_Kontrol
+        run: docker --version
+
       - name: Sistemi_Ayaga_Kaldir
-        run: docker-compose up -d
+        run: docker compose up -d
