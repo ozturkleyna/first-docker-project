@@ -1,0 +1,10 @@
+name: Aleynanin_Robotu
+on: [push]
+jobs:
+  test_isi:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kodlari_Kopyala
+        uses: actions/checkout@v4
+      - name: Sistemi_Ayaga_Kaldir
+        run: docker-compose up -d
